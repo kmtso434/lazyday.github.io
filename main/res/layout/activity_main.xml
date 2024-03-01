@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="118dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="248dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main"
+        app:layout_constraintEnd_toStartOf="@+id/home"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="83dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/instagram_home_icon_on_transparent_background_png" />
+
+    <ImageView
+        android:id="@+id/main"
+        android:layout_width="466dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211"
+        app:srcCompat="@drawable/ractangle" />
+
+    <ImageView
+        android:id="@+id/AndroidStudio"
+        android:layout_width="0dp"
+        android:layout_height="101dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kotlin"
+        app:srcCompat="@drawable/little_ractangle" />
+
+    <ImageView
+        android:id="@+id/kotlin"
+        android:layout_width="0dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/AndroidStudio"
+        app:layout_constraintEnd_toEndOf="@+id/text_kotlin"
+        app:layout_constraintEnd_toStartOf="@+id/AndroidStudio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/AndroidStudio"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/little_ractangle" />
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카테고리"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/kotlin"
+        app:layout_constraintStart_toStartOf="@+id/kotlin" />
+
+    <TextView
+        android:id="@+id/text_kotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:text="코틀린 (프로그래머스)"
+        app:layout_constraintBottom_toBottomOf="@+id/text_AndroidStudio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_AndroidStudio" />
+
+    <TextView
+        android:id="@+id/text_AndroidStudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="안드로이드 스튜디오"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/AndroidStudio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/AndroidStudio"
+        app:layout_constraintTop_toBottomOf="@+id/AndroidStudio"
+        app:layout_constraintVertical_bias="0.027" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
